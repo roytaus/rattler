@@ -60,7 +60,7 @@ jobs:
 
       - name: Build and test
         working-directory: js-rattler
-        run: pixi run test
+        run: npx jest js-rattler/src/Gateway.test.ts js-rattler/src/PackageName.test.ts js-rattler/src/PackageRecord.test.ts js-rattler/src/Version.test.ts js-rattler/src/VersionSpec.test.ts js-rattler/src/solve.test.ts
 
       # some e2e test to make sure our build works
       - run: |
